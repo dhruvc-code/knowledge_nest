@@ -5,7 +5,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-CSV_FILE = "data/students.csv"
+CSV_FILE = "student.csv"
 
 # CSV file create if not exists
 if not os.path.exists(CSV_FILE):
