@@ -50,7 +50,7 @@ def submit():
         ])
 
     return render_template("success.html", name=name)
-    @app.route("/students")
+@app.route("/students")
 def students():
     with open(CSV_FILE, "r", encoding="utf-8") as file:
         data = file.read()
