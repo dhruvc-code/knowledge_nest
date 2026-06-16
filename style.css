@@ -43,3 +43,29 @@ button{
 button:hover{
     background:#0056b3;
 }
+
+/* NEW CODE */
+
+.btn{
+    display:inline-block;
+    background:#007bff;
+    color:white;
+    padding:12px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+.btn:hover{
+    background:#0056b3;
+}
+
+p{
+    color:#555;
+    line-height:1.6;
+}
+
+h3{
+    color:#007bff;
+}
