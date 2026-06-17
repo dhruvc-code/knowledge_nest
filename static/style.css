@@ -6,6 +6,54 @@ body{
     padding:0;
 }
 
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background: linear-gradient(90deg, #1e3a8a, #111827);
+    padding:15px 25px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+/* LOGO */
+.logo{
+    color:#ffd700;
+    font-size:26px;
+    font-weight:700;
+}
+
+/* NAV LINKS */
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#ffffff;
+    font-weight:600;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#ffd700;
+    transform: scale(1.1);
+}
+
+/* REGISTER BUTTON */
+.register-btn{
+    background:#ffd700;
+    color:#1e3a8a !important;
+    padding:8px 12px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
 /* CONTAINER */
 .container{
     width:90%;
@@ -67,7 +115,7 @@ button:hover{
     background:#d97706;
 }
 
-/* LINKS BUTTON */
+/* LINK BUTTON */
 .btn{
     display:inline-block;
     background:#f59e0b;
