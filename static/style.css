@@ -1,8 +1,10 @@
 body{
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg,#11998e,#38ef7d);
+    
+    font-family:'Poppins',sans-serif;
+    background: linear-gradient(135deg,#111827,#374151);
     margin:0;
     padding:0;
+
 }
 
 .container{
