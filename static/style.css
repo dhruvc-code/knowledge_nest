@@ -9,7 +9,8 @@ body{
     
     width:90%;
     max-width:550px;
-    background:#ffffff;
+    background:rgba(255,255,255,0.92);
+    background-filter: blur(10px);
     margin:50px auto;
     padding:35px;
     border-radius:25px;
@@ -78,4 +79,11 @@ h3{
 p{
     color:#444;
     line-height:1.6;
+}
+.container{
+    transition: 0.3s;
+}
+
+.container:hover{
+    transform: translateY(-5px);
 }
