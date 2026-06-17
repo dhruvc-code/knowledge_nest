@@ -53,8 +53,10 @@ def submit():
 @app.route("/students")
 def students():
     with open(CSV_FILE, "r", encoding="utf-8") as file:
-        data = file.read()
-    return f"<pre>{data}</pre>"
+        reader = csv.reader(file)
+        students = list(reader)
+
+    return render_template("students.html", students=students)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
