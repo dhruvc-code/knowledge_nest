@@ -24,6 +24,13 @@ body{
     font-size:26px;
     font-weight:700;
 }
+#typing{
+    font-size:24px;
+    font-weight:bold;
+    margin:15px 0;
+    color:#ff7b54;
+    min-height:35px;
+}
 
 /* NAV LINKS */
 .nav-links{
