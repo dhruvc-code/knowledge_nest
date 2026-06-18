@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Knowledge Nest</title>
+    <p id "typing"></p>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -10,6 +11,39 @@
 <a href="https://wa.me/916230919573" class="whatsapp-btn" target="_blank">
     💬
 </a>
+<script>
+const texts = [
+    "Learn English 🚀",
+    "Build Confidence 🎤",
+    "Shape Your Future 🌟"
+];
+
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+function type() {
+    if (count === texts.length) {
+        count = 0;
+    }
+
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+
+    document.getElementById("typing").textContent = letter;
+
+    if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+        setTimeout(type, 1500);
+    } else {
+        setTimeout(type, 100);
+    }
+}
+
+type();
+</script>    
 <body>
 
 <!-- NAVBAR -->
