@@ -31,6 +31,23 @@ body{
     color:#ff7b54;
     min-height:35px;
 }
+.course-section{
+    background:white;
+    padding:30px;
+    margin:30px auto;
+    max-width:800px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.course-section h2{
+    margin-bottom:15px;
+}
+
+.course-section ul{
+    text-align:left;
+    display:inline-block;
+}
 
 /* NAV LINKS */
 .nav-links{
